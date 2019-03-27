@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface
 
+# Notchbar killer
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
