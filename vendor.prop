@@ -5,3 +5,6 @@ ro.surface_flinger.set_idle_timer_ms=200
 ro.surface_flinger.set_touch_timer_ms=200
 vendor.display.idle_time=1100
 
+# SurfaceFlinger
+ro.surface_flinger.has_wide_color_display=1
+ro.surface_flinger.use_color_management=1
