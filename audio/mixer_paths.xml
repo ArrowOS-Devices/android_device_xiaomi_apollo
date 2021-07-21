@@ -171,15 +171,11 @@
     <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="RX_CDC_DMA_RX_1 Channels" value="One" />
     <ctl name="VI_FEED_TX Channels" value="Two" />
-    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
-    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
     <ctl name="WSA_CDC_DMA_RX_0 Format" value="S16_LE" />
     <ctl name="RX_CDC_DMA_RX_0 Format" value="S16_LE" />
     <ctl name="TX_CDC_DMA_TX_3 Format" value="S16_LE" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
-    <ctl name="WSA_CDC_DMA_RX_0 Port Mixer SLIM_7_TX" value="0" />
-    <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_7_TX" value="0" />
     <!-- HFP end -->
     <!-- echo reference -->
     <ctl name="AUDIO_REF_EC_UL1 MUX" value="None" />
@@ -231,8 +227,6 @@
     <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
-    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
-    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
     <!-- Multimode Voice2 BTSCO -->
     <ctl name="SLIM_7_RX_Voice Mixer VoiceMMode2" value="0" />
@@ -307,22 +301,8 @@
 
     <!-- Codec controls -->
     <!-- WSA controls -->
-    <ctl name="WSA RX0 MUX" value="ZERO" />
-    <ctl name="WSA RX1 MUX" value="ZERO" />
-    <ctl name="WSA_RX0 INP0" value="ZERO" />
-    <ctl name="WSA_RX1 INP0" value="ZERO" />
-    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
-    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
     <ctl name="WSA_RX_0_VI_FB_LCH_MUX" value="ZERO" />
     <ctl name="WSA_RX_0_VI_FB_RCH_MUX" value="ZERO" />
-    <ctl name="SpkrLeft COMP Switch" value="0" />
-    <ctl name="SpkrRight COMP Switch" value="0" />
-    <ctl name="SpkrLeft BOOST Switch" value="0" />
-    <ctl name="SpkrRight BOOST Switch" value="0" />
-    <ctl name="SpkrLeft VISENSE Switch" value="0" />
-    <ctl name="SpkrRight VISENSE Switch" value="0" />
-    <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
-    <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
 
     <!-- RX Controls -->
     <ctl name="RX_MACRO RX0 MUX" value="ZERO" />
@@ -402,14 +382,11 @@
     <ctl name="TX SMIC MUX7" value="ZERO" />
 
     <!-- Volume controls -->
-    <ctl name="WSA_RX0 Digital Volume" value="84" />
-    <ctl name="WSA_RX1 Digital Volume" value="84" />
     <ctl name="RX_RX0 Digital Volume" value="84" />
     <ctl name="RX_RX1 Digital Volume" value="84" />
     <ctl name="RX_RX2 Digital Volume" value="84" />
     <ctl name="HPHL Volume" value="18" />
     <ctl name="HPHR Volume" value="18" />
-    <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
     <ctl name="TX_DEC0 Volume" value="84" />
     <ctl name="TX_DEC1 Volume" value="84" />
@@ -425,10 +402,6 @@
     <ctl name="ADC3 Volume" value="12" />
 
     <!-- Compander controls -->
-    <ctl name="WSA_COMP1 Switch" value="0" />
-    <ctl name="WSA_COMP2 Switch" value="0" />
-    <ctl name="COMP7 Switch" value="0" />
-    <ctl name="COMP8 Switch" value="0" />
 
     <!-- Headphone class-H mode -->
     <ctl name="RX_HPH_PWR_MODE" value="LOHIFI" />
@@ -472,19 +445,12 @@
     <ctl name="IIR0 INP3 MUX" value="ZERO" />
 
     <!-- vbat related data -->
-    <ctl name="GSM mode Enable" value="OFF" />
-    <ctl name="WSA_Softclip0 Enable" value="0" />
-    <ctl name="WSA_Softclip1 Enable" value="0" />
-    <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="0" />
-    <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="0" />
 
     <!-- Codec controls end -->
 
     <!-- defaults for mmap record -->
     <ctl name="MultiMedia16 Mixer TX_CDC_DMA_TX_3" value="0" />
     <ctl name="MultiMedia16 Mixer TX_CDC_DMA_TX_4" value="0" />
-    <ctl name="MultiMedia16 Mixer SLIM_7_TX" value="0" />
-    <ctl name="MultiMedia16 Mixer TERT_MI2S_TX" value="0" />
     <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="0" />
 
     <!-- ultrasound related -->
@@ -496,7 +462,6 @@
     <ctl name="Ultrasound Microphone Index" value="0"/>
     <ctl name="Ultrasound Suspend" value="0"/>
     <ctl name="Ultrasound ReportNone" value="0"/>
-    <ctl name="Ultrasound Rx Device" value="0"/>
     <!-- for mius start -->
     <ctl name="Mi_Ultrasound Enable" value="Off" />
     <ctl name="Mi_Ultrasound RampDown" value="Off"/>
@@ -565,7 +530,6 @@
     </path>
 
     <path name="compress-voip-call speaker">
-        <ctl name="VOIP_EXT_EC MUX" value="TERT_MI2S_TX" />
         <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
     </path>
@@ -584,7 +548,6 @@
 
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="gsm-mode">
-        <ctl name="GSM mode Enable" value="ON" />
     </path>
 
     <path name="echo-reference">
@@ -901,7 +864,6 @@
     </path>
 
     <path name="low-latency-playback resume">
-        <ctl name="MultiMedia5_RX QOS Vote" value="Enable" />
     </path>
 
     <path name="low-latency-playback speaker-and-bt-sco">
@@ -2023,7 +1985,6 @@
     </path>
 
     <path name="low-latency-record capture-fm">
-      <ctl name="MultiMedia8 Mixer TERT_MI2S_TX" value="1" />
     </path>
 
     <path name="fm-virtual-record capture-fm">
@@ -2350,7 +2311,6 @@
     </path>
 
     <path name="voicemmode1-call display-port1-and-usb-headset-mic">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
     </path>
 
@@ -2360,7 +2320,6 @@
     </path>
 
     <path name="voicemmode1-call display-port1">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
@@ -2431,7 +2390,6 @@
     </path>
 
     <path name="voicemmode2-call display-port1-and-usb-headset-mic">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
     </path>
 
@@ -2441,7 +2399,6 @@
     </path>
 
     <path name="voicemmode2-call display-port1">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 
@@ -2795,58 +2752,26 @@
 
     <path name="speaker">
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="Two" />
-        <ctl name="WSA RX0 MUX" value="AIF1_PB" />
-        <ctl name="WSA RX1 MUX" value="AIF1_PB" />
-        <ctl name="WSA_RX0 INP0" value="RX0" />
-        <ctl name="WSA_RX1 INP0" value="RX1" />
-        <ctl name="WSA_COMP1 Switch" value="1" />
-        <ctl name="WSA_COMP2 Switch" value="1" />
-        <ctl name="SpkrLeft COMP Switch" value="1" />
-        <ctl name="SpkrLeft BOOST Switch" value="1" />
-        <ctl name="SpkrLeft VISENSE Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
-        <ctl name="SpkrRight COMP Switch" value="1" />
-        <ctl name="SpkrRight BOOST Switch" value="1" />
-        <ctl name="SpkrRight VISENSE Switch" value="1" />
-        <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
     </path>
 
     <path name="speaker-mono">
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
-        <ctl name="WSA RX0 MUX" value="AIF1_PB" />
-        <ctl name="WSA_RX0 INP0" value="RX0" />
-        <ctl name="WSA_COMP1 Switch" value="1" />
-        <ctl name="SpkrLeft COMP Switch" value="1" />
-        <ctl name="SpkrLeft BOOST Switch" value="1" />
-        <ctl name="SpkrLeft VISENSE Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
     </path>
 
     <path name="speaker-mono-2">
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
-        <ctl name="WSA RX1 MUX" value="AIF1_PB" />
-        <ctl name="WSA_RX1 INP0" value="RX1" />
-        <ctl name="WSA_COMP2 Switch" value="1" />
-        <ctl name="SpkrRight COMP Switch" value="1" />
-        <ctl name="SpkrRight BOOST Switch" value="1" />
-        <ctl name="SpkrRight VISENSE Switch" value="1" />
-        <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
     </path>
 
    <path name="speaker-vbat-mono">
        <path name="speaker-mono" />
-       <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
    </path>
 
    <path name="speaker-vbat-mono-2">
        <path name="speaker-mono-2" />
-       <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" />
    </path>
 
    <path name="speaker-vbat">
        <path name="speaker" />
-       <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
-       <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" />
    </path>
 
     <path name="speaker-hdk">
@@ -2886,7 +2811,6 @@
         <ctl name="IIR0 INP0 Volume" value="54" />
         <ctl name="IIR0 INP0 MUX" value="DEC2" />
         <ctl name="RX INT2 MIX2 INP" value="SRC0" />
-        <ctl name="WSA_RX0 INT0 SIDETONE MIX" value="SRC0" />
     </path>
 
     <path name="afe-sidetone">
@@ -2905,8 +2829,6 @@
     </path>
 
     <path name="speaker-protected">
-        <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" />
-        <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker" />
         <ctl name="VI_FEED_TX Channels" value="Two" />
@@ -2915,7 +2837,6 @@
     </path>
 
     <path name="voice-speaker-protected">
-        <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker-mono" />
         <ctl name="VI_FEED_TX Channels" value="One" />
@@ -2923,7 +2844,6 @@
     </path>
 
     <path name="voice-speaker-2-protected">
-        <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker-mono-2" />
         <ctl name="VI_FEED_TX Channels" value="One" />
@@ -2936,18 +2856,14 @@
 
     <path name="speaker-protected-vbat">
         <path name="speaker-protected" />
-        <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
-        <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" />
     </path>
 
     <path name="voice-speaker-protected-vbat">
         <path name="voice-speaker-protected" />
-        <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
     </path>
 
     <path name="voice-speaker-2-protected-vbat">
         <path name="voice-speaker-2-protected" />
-        <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" />
     </path>
 
     <path name="vi-feedback">
@@ -2961,14 +2877,6 @@
 
     <path name="handset">
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
-        <ctl name="WSA RX0 MUX" value="AIF1_PB" />
-        <ctl name="WSA_RX0 INP0" value="RX0" />
-        <ctl name="WSA_COMP1 Switch" value="1" />
-        <ctl name="SpkrLeft COMP Switch" value="1" />
-        <ctl name="SpkrLeft BOOST Switch" value="1" />
-        <ctl name="SpkrLeft VISENSE Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
-        <ctl name="EAR SPKR PA Gain" value="G_6_DB" />
     </path>
 
     <path name="handset-mic">
@@ -3727,7 +3635,6 @@
     </path>
 
     <path name="mmap-record bt-sco">
-      <ctl name="MultiMedia16 Mixer SLIM_7_TX" value="1" />
     </path>
 
     <path name="mmap-record bt-sco-wb">
@@ -3739,7 +3646,6 @@
     </path>
 
     <path name="mmap-record capture-fm">
-      <ctl name="MultiMedia16 Mixer TERT_MI2S_TX" value="1" />
     </path>
 
     <path name="mmap-record usb-headset-mic">
