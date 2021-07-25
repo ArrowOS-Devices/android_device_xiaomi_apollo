@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface
 
+# Camera Cutout
+PRODUCT_PACKAGES += \
+    CutoutRingServiceApollo
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
