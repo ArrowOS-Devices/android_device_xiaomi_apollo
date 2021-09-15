@@ -25,9 +25,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     CutoutRingServiceApollo
 
-# Properties
-TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
-
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from sm8250-common
