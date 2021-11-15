@@ -41,6 +41,9 @@ function blob_fixup() {
             # 00 f0 20 e3  # nop
             sed -i 's|\x18\x10\x90\xe5\x58\xb0\x01\xeb|\x18\x10\x90\xe5\x00\xf0\x20\xe3|g' "${2}"
             ;;
+        vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
+            sed -i 's|\x21\x00\x80\x52\x9A\x0A\x00\x94|\x21\x00\x80\x52\x1F\x20\x03\xD5|g' "${2}"
+            ;;
     esac
 }
 
