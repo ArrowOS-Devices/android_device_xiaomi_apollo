@@ -170,9 +170,9 @@
         <item>295</item>
         <item>369</item>
         <item>434</item>
-        <item>468</item>
         <item>495</item>
-        <item>530</item>
+        <item>495</item>
+        <item>495</item>
     </array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -184,7 +184,7 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
-        <item>470.0</item>
+        <item>450.0</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
