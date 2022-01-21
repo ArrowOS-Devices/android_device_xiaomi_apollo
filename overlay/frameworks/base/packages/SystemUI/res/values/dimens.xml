@@ -21,6 +21,10 @@
     <dimen name="status_bar_padding_top">8dp</dimen>
     <dimen name="status_bar_padding_end">30px</dimen>
 
+    <!-- The padding of a notification icon on top to the start of the notification. Used for custom
+         views where the distance can't be measured -->
+    <dimen name="notification_icon_appear_padding">50dp</dimen>
+
     <!-- Margin on the left side of the heads up notification -->
     <dimen name="heads_up_status_bar_padding_start">6dp</dimen>
 
