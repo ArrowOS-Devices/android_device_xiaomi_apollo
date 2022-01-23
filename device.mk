@@ -43,5 +43,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Inherit from firmware repo
+$(call inherit-product, vendor/xiaomi-firmware/apollo/Android.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
