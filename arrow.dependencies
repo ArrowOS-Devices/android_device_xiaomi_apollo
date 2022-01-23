@@ -2,5 +2,10 @@
   {
     "repository": "android_device_xiaomi_sm8250-common",
     "target_path": "device/xiaomi/sm8250-common"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "Dobsgw/vendor_xiaomi-firmware_apollo",
+    "target_path": "vendor/xiaomi-firmware/apollo"
   }
 ]
