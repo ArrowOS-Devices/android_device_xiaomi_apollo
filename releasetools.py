@@ -30,11 +30,6 @@ def AddImage(info, basename, dest):
   if path not in info.input_zip.namelist():
     return
 
-def AddImageRadio(info, basename, dest):
-  path = "RADIO/" + basename
-  if path not in info.input_zip.namelist():
-    return
-
   data = info.input_zip.read(path)
   common.ZipWriteStr(info.output_zip, basename, data)
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
@@ -46,32 +41,23 @@ def OTA_InstallEnd(info):
   AddImage(info, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
 
   # Firmware
-  AddImageRadio(info, "abl.elf", "/dev/block/bootdevice/by-name/abl");
-  AddImageRadio(info, "abl.elf", "/dev/block/bootdevice/by-name/ablbak");
-  AddImageRadio(info, "aop.mbn", "/dev/block/bootdevice/by-name/aop");
-  AddImageRadio(info, "aop.mbn", "/dev/block/bootdevice/by-name/aopbak");
-  AddImageRadio(info, "BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");
-  AddImageRadio(info, "cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlib");
-  AddImageRadio(info, "cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlibbak");
-  AddImageRadio(info, "cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64");
-  AddImageRadio(info, "cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64bak");
-  AddImageRadio(info, "devcfg.mbn", "/dev/block/bootdevice/by-name/devcfg");
-  AddImageRadio(info, "devcfg.mbn", "/dev/block/bootdevice/by-name/devcfgbak");
-  AddImageRadio(info, "dspso.bin", "/dev/block/bootdevice/by-name/dsp");
-  AddImageRadio(info, "featenabler.mbn", "/dev/block/bootdevice/by-name/featenabler");
-  AddImageRadio(info, "hyp.mbn", "/dev/block/bootdevice/by-name/hyp");
-  AddImageRadio(info, "hyp.mbn", "/dev/block/bootdevice/by-name/hypbak");
-  AddImageRadio(info, "km4.mbn", "/dev/block/bootdevice/by-name/keymaster");
-  AddImageRadio(info, "NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");
-  AddImageRadio(info, "qupv3fw.elf", "/dev/block/bootdevice/by-name/qupfw");
-  AddImageRadio(info, "qupv3fw.elf", "/dev/block/bootdevice/by-name/qupfwbak");
-  AddImageRadio(info, "storsec.mbn", "/dev/block/bootdevice/by-name/storsec");
-  AddImageRadio(info, "storsec.mbn", "/dev/block/bootdevice/by-name/storsecbak");
-  AddImageRadio(info, "tz.mbn", "/dev/block/bootdevice/by-name/tz");
-  AddImageRadio(info, "tz.mbn", "/dev/block/bootdevice/by-name/tzbak");
-  AddImageRadio(info, "uefi_sec.mbn", "/dev/block/bootdevice/by-name/uefisecapp");
-  AddImageRadio(info, "xbl_4.elf", "/dev/block/bootdevice/by-name/xbl_4");
-  AddImageRadio(info, "xbl_5.elf", "/dev/block/bootdevice/by-name/xbl_5");
-  AddImageRadio(info, "xbl_config_4.elf", "/dev/block/bootdevice/by-name/xbl_config_4");
-  AddImageRadio(info, "xbl_config_5.elf", "/dev/block/bootdevice/by-name/xbl_config_5");
+  info.script.AppendExtra('package_extract_file("install/firmware-update/abl.elf", "/dev/block/bootdevice/by-name/abl");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/aop.mbn", "/dev/block/bootdevice/by-name/aop");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlib");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/devcfg.mbn", "/dev/block/bootdevice/by-name/devcfg");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/dspso.bin", "/dev/block/bootdevice/by-name/dsp");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/featenabler.mbn", "/dev/block/bootdevice/by-name/featenabler");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/hyp.mbn", "/dev/block/bootdevice/by-name/hyp");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/km4.mbn", "/dev/block/bootdevice/by-name/keymaster");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/qupv3fw.elf", "/dev/block/bootdevice/by-name/qupfw");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/storsec.mbn", "/dev/block/bootdevice/by-name/storsec");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/tz.mbn", "/dev/block/bootdevice/by-name/tz");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/uefi_sec.mbn", "/dev/block/bootdevice/by-name/uefisecapp");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_4.elf", "/dev/block/bootdevice/by-name/xbl_4");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_5.elf", "/dev/block/bootdevice/by-name/xbl_5");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_config_4.elf", "/dev/block/bootdevice/by-name/xbl_config_4");')
+  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_config_5.elf", "/dev/block/bootdevice/by-name/xbl_config_5");')
   return
