@@ -54,7 +54,7 @@ def OTA_InstallEnd(info):
       'featenabler.mbn': ['featenabler'],
       'hyp.mbn': ['hyp'],
       'km4.mbn': ['keymaster'],
-      'NON-HLOS.elf': ['modem'],
+      'NON-HLOS.bin': ['modem'],
       'qupv3fw.elf': ['qupfw'],
       'storsec.mbn': ['storsec'],
       'tz.mbn': ['tz'],
