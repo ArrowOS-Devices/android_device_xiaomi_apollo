@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "android_device_xiaomi_sm8250-common",
+    "target_path": "device/xiaomi/sm8250-common"
+  },
+  {
+    "remote": "github",
+    "repository": "android_vendor_xiaomi_apollo",
+    "target_path": "vendor/xiaomi"
+  },
+  {
+    "remote": "github",
+    "repository": "android_kernel_xiaomi_apollo",
+    "target_path": "kernel/xiaomi/sm8250"
+  },
+  {
+    "remote": "github",
+    "repository": "Dobsgw/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "remote": "github",
+    "repository": "android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPreBuilt"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "Dobsgw/vendor_xiaomi-firmware_apollo",
+    "target_path": "vendor/xiaomi-firmware/apollo"
+  }
+]
