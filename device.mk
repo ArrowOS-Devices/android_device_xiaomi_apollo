@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-arrow
 
+# Shims
+PRODUCT_PACKAGES += \
+    lib-watermarkshim
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
